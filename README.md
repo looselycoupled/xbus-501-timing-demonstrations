@@ -3,6 +3,14 @@ Overview
 
 A collection of scripts to demonstrate very easy ways to benchmark code or time execution.  These scripts are presented as a starting off point to get you thinking about performance and measurement.
 
+Setup
+-----
+
+One of the example files requires a dependency that can be loaded using pip.  To install the dependencies from the included requirements file use the `-r` flag as shown in the example below.
+
+    $ pip install -r requirements.txt
+
+
 Example 1
 ---------
 
