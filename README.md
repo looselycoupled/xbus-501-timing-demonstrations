@@ -8,6 +8,8 @@ Example 1
 
 This example demonstrates the use of the `time` utility as found on most Unix like personal computers (may not be available on Windows).  For more information on how to use the command, consult the man file with `man time`.
 
+For a quick explanation of real, user, and sys values please review [this](http://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1#556411) Stack Overflow answer.
+
 Usage:
 
     $ time python 1-example.py 10000
