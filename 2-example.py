@@ -67,7 +67,7 @@ if __name__ == '__main__':
     upper_bound = int(sys.argv[1])
     start = time.time()
     print find_largest_prime(upper_bound)
-    length = time.time() - start
-    print 'elapsed time: %0.2fs' % length
+    elapsed = time.time() - start
+    print 'elapsed time: %0.2fs' % elapsed
 
 
