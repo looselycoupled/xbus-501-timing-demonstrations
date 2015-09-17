@@ -34,7 +34,10 @@ import time
 ##########################################################################
 
 class Timer(object):
-
+    """
+    Basic timer class to use as a context manager.
+    https://www.python.org/dev/peps/pep-0343/
+    """
     def __enter__(self):
         self.start = time.time()
         return self
@@ -42,7 +45,7 @@ class Timer(object):
     def __exit__(self, *args):
         self.end = time.time()
         self.secs = self.end - self.start
-        print 'elapsed time: %0.2fs' % self.secs
+
 
 
 def is_prime(limit):
@@ -77,6 +80,8 @@ def find_largest_prime(limit):
 
 if __name__ == '__main__':
     upper_bound = int(sys.argv[1])
-    with Timer():
+    with Timer() as t:
         print find_largest_prime(upper_bound)
+
+    print 'elapsed time: %0.2fs' % t.secs
 
