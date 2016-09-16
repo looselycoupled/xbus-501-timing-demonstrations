@@ -64,5 +64,4 @@ def find_largest_prime(limit):
 
 if __name__ == '__main__':
     upper_bound = int(sys.argv[1])
-    print find_largest_prime(upper_bound)
-
+    print(find_largest_prime(upper_bound))
